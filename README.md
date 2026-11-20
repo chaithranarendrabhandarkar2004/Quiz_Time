@@ -126,25 +126,33 @@ GitHub: [@chaithranarendrabhandarkar2004](https://github.com/chaithranarendrabha
 
 ---
 
+---
+
 ## 📸 Project Screenshots
 
 ### 🏠 Welcome Screen
-![Quiz Time Welcome Screen](screenshot/Qhome.png)
+![Quiz Time Welcome Screen](screenshots/Qhome.png)
 
-### 🎮 Game Dashboard
-![Quiz Time Dashboard](screenshot/Qhome2.png)
+### 🎮 Home Dashboard
+![Quiz Time Dashboard](screenshots/Qhome2.png)
 
 ### 📚 Quiz Categories
-![Quiz Categories](screenshot/category.png)
+![Quiz Categories](screenshots/category.png)
 
 ### 🏆 Level Selection
-![Quiz Level Selection](screenshot/level.png)
+![Quiz Level Selection](screenshots/level.png)
 
 ### 👤 Player Profile
-![Quiz Player Profile](screenshot/profile.png)
+![Quiz Player Profile](screenshots/profile.png)
+
+### ❓ Quiz Questions
+![Quiz Questions](screenshots/question.png)
+
+### 🎯 Quiz Results
+![Quiz Results](screenshots/result.png)
 
 ### ⚙️ Settings
-![Quiz Settings](screenshot/setting.png)
+![Quiz Settings](screenshots/setting.png)
 
 ---
 
