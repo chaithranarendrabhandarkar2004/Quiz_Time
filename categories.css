@@ -1,0 +1,128 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#container {
+    width: 100%;
+    min-height: 85vh;
+    padding: 20px;
+    overflow: hidden;
+    background-image: url("image.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.content {
+    display: none;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.content.active {
+    display: grid;
+}
+
+.card1 {
+    position: relative;
+    width: 70%;
+    min-height: 250px;
+    background-image: url("background_image.jfif");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    left:50px;
+    border-radius: 6px;
+}
+
+.card1:active{
+    transform: scale(0.98);
+}
+
+.card1 h1 {
+    font-size: 40px;
+}
+
+.card1 h4 {
+    font-size: 20px;
+}
+
+.card1 p {
+    font-size: 16px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.navigation button {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#back {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 25px;
+    color: turquoise;
+    text-shadow:
+        0 0 10px rgb(231, 86, 216),
+        0 0 20px rgb(231, 86, 216);
+}
+
+@media (max-width: 768px) {
+    .content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .card1 {
+        min-height: 220px;
+    }
+}
+
+@media (max-width: 480px) {
+    #container {
+        padding: 12px;
+    }
+
+    .content {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .card1 {
+        min-height: 200px;
+    }
+
+    .card1 h1 {
+        font-size: 35px;
+    }
+
+    .card1 h4 {
+        font-size: 19px;
+    }
+
+    .card1 p {
+        font-size: 14px;
+    }
+
+    #back {
+        top: 15px;
+        left: 15px;
+    }
+}

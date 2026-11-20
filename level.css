@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+#container {
+    position: relative;              
+    margin: 0;
+    padding: 20px;
+    width: 100%;
+    min-height: 100vh;
+    min-height: 100dvh;  
+    background-color: #222;            
+    background-image: url("image.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;           
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.slider {
+    position: relative;
+    width: min(350px, 90vw);         
+    aspect-ratio: 7 / 10;             
+    max-height: 75vh;                 
+    overflow: hidden;
+    border-radius: 40px;
+}
+
+.slide {
+    position: absolute;
+    inset: 0;
+    padding: 20px;
+    background-color: #4a00e0; 
+    background-image: url("download.jpg");   
+    border-radius: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 0.5s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.slide h1 {
+    color: #ffffff;
+    font-size: clamp(24px, 7vw, 32px);
+    margin: 0;
+}
+
+.slide p {
+    color: #e0e0e0;
+    font-size: clamp(15px, 4.5vw, 18px);
+    margin: 0;
+}
+
+.slide button {
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(45deg, #8a2be2, #4a00e0);
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgb(231, 86, 216), 0 0 20px rgb(231, 86, 216);
+    transition: transform 0.2s ease;
+}
+
+.slide button:hover {
+    transform: scale(1.05);
+}
+
+.navigation {
+    display: flex;                    
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    color: #fff;
+}
+
+.navigation button {
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#back {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 25px;
+    color: turquoise;
+    text-shadow: 0 0 10px rgb(231, 86, 216), 0 0 20px rgb(231, 86, 216);
+}
+
+@media (max-width: 480px) {
+    #container {
+        padding: 12px;
+        gap: 15px;
+    }
+
+    .slider,
+    .slide {
+        border-radius: 25px;
+    }
+
+    #back {
+        top: 12px;
+        left: 12px;
+        font-size: 22px;
+    }
+}
+
+@media (max-height: 520px) and (orientation: landscape) {
+    .slider {
+        height: 75vh;     
+        aspect-ratio: auto;
+    }
+}
