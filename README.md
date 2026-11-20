@@ -126,6 +126,28 @@ GitHub: [@chaithranarendrabhandarkar2004](https://github.com/chaithranarendrabha
 
 ---
 
+## 📸 Project Screenshots
+
+### 🏠 Welcome Screen
+![Quiz Time Welcome Screen](screenshot/Qhome.png)
+
+### 🎮 Game Dashboard
+![Quiz Time Dashboard](screenshot/Qhome2.png)
+
+### 📚 Quiz Categories
+![Quiz Categories](screenshot/category.png)
+
+### 🏆 Level Selection
+![Quiz Level Selection](screenshot/level.png)
+
+### 👤 Player Profile
+![Quiz Player Profile](screenshot/profile.png)
+
+### ⚙️ Settings
+![Quiz Settings](screenshot/setting.png)
+
+---
+
 ⭐ If you find this project interesting, consider giving the repository a star!
 
 **Built with curiosity and a love for learning!**
